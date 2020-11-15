@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  	<style type="text/css">
+  		body {
+			background: #000 url(fon.jpg);
+			background-size: 100%;
+			background-attachment: fixed;
+			background-repeat: repeat-x;			}
+		img {box-shadow: -19px 0 22px -19px #000, 19px 0 22px -19px #000}
+  		h1 {color:blue; background-color:red; text-decoration:underline; font-weight:bold; text-align: center;}
+  		.orange {color: orange; text-align:center}
+  		.red {color: red}
+  		.blue {color: blue}
+  		.white {color: white; background: gray}
+  		.italic {font-style: italic;}
+  		.under {color:green; text-decoration:underline; font-weight:bold;}
+  		img.center {display: block; margin-left: auto; margin-right: auto; border-radius: 8px}
+  		img.radius {border-radius: 50%}
+  		li {font-style: italic; color:navy; text-shadow: 2px 3px 5px #3498db;}
+  		figcaption {font-style: italic; color: gray}
+
+		ol {
+			list-style-type: none; 
+			counter-reset: num;
+			margin: 0 0 0 45px;
+			padding: 15px 0 5px 0;
+			font-size: 16px;
+			}
+		ol li {
+			position: relative;	
+			margin: 0 0 0 0;
+			padding: 0 0 10px 0;
+			line-height: 1.4;
+			}
+		ol li:before {
+			content: counter(num); 
+			counter-increment: num;
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: -38px;
+			width: 28px;
+			height: 28px;
+			background: #ef6780;
+			color: #fff;
+			text-align: center;
+			line-height: 28px;
+			font-size: 18px;
+			}
+  		
+  		table {
+			font-size: 14px;
+			border-collapse: collapse;
+			text-align: center;
+			}
+		th, td:first-child {
+		background: #AFCDE7;
+		color: white;
+		padding: 10px 20px;
+		}
+		th, td {
+		border-style: solid;
+		border-width: 0 1px 1px 0;
+		border-color: white;
+		}
+		td {
+		background: #D8E6F3;
+		}
+		th:first-child, td:first-child {
+		text-align: left;
+		
+  	</style>
+    <title>Всё о кошках</title>
+    <script src="jquery.js"></script>
+    <script src="typeit.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+ <body onload="startTime()">
+    <header>
+      <h1>Добро пожаловать на наш сайт - Всё о кошках!</h1>
+
+      <img id="block" src="cats.webp" alt="Cats" class="center">
+
+    
+
+      <p class="orange" id="prog_time"></p>
+
+<script>
+$('#prog_time').typeIt({
+   strings: 'Бог создал Кошку, чтобы у человека был тигр, которого можно погладить. ',
+   speed: 50, //скорость анимации
+   autoStart: false /*если true то анимация начнется сразу после загрузки страницы, если false, то только когда блок будет в зоне видимости*/
+}); 
+</script>
+
+    </header>
+        <main>
+        <h2 class="blue">О породах кошек:</h2>
+
+        <p class="white">В мире существует великое множество породистых и беспородных котов. Однако только у 3 % всех кошек есть официальная родословная. Людям, которые интересуются фелинологией, наверняка будет интересно узнать, сколько всего пород существует на планете, и по какому принципу происходит классификация пушистых питомцев.</p>
+		<p class="white">Впервые породистых кошек начали разводить в Азии исключительно в декоративных целях, в то время как в Европе эти животные все еще использовались для уничтожения грызунов. Именно поэтому их классифицируют по внешнему виду, а не по сфере деятельности, как собак.</p>
+		<p class="white">В настоящий момент наибольшее количество пород кошек в мире зарегистрировала Всемирная федерация кошек: 74 вида.</p>
+		
+		<script>
+
+   			$('p').last().html('В настоящий момент наибольшее количество пород кошек в мире зарегистрировала Всемирная федерация кошек: 74 вида, из которых 9 (саванна, тиффани, бристольская и другие породы) были утверждены недавно.'); // содержание последнего элемента p меняется
+		</script>
+
+		<h3 class="italic"> Наиболее популлярные породы:</h3>
+		<ol>
+			<li>Сиамская</li>
+			<img src="siam.webp" alt="siam" width="200" height="142">
+			<li>Канадский сфинкс</li>
+			<img src="sfinx.webp" alt="sfinx" width="200" height="142">
+			<li>Русская голубая</li>
+			<img src="russian.webp" alt="russian" width="200" height="142">
+			<li>Шотландская вислоухая (скоттиш-фолд)</li>
+			<img src="scottish.webp" alt="scottish" width="200" height="142">
+			<li>Американская короткошерстная кошка</li>
+			<img src="usa.webp" alt="usa" width="200" height="142">
+			<li>Британская короткошерстная кошка</li>
+			<img src="britan.webp" alt="britan" width="200" height="142">
+			<li>Рэгдолл</li>
+			<img src="regdoll.webp" alt="regdoll" width="200" height="142">
+			<li>Мейн-кун</li>
+			<img src="mein.webp" alt="mein" width="200" height="142">
+			<li>Персидская кошка</li>
+			<img src="pers.webp" alt="pers" width="200" height="142">
+			<li>Экзотическая кошка (кот экзот)</li>
+			<img src="exot.webp" alt="exot" width="200" height="142">
+		</ol>
+     
+
+<h2 class="blue">Как цвет кошки влияет на характер</h2>
+
+<form> 
+<input type="button" onclick="myfunction('Очень подозрительные ко всему незнакомому. Преданы. Любители пообщаться с близкими. Добродушные по отношению к домочадцам.')" value="Черные"> 
+<input type="button" onclick="myfunction('Робкие. Миролюбивые и спокойные кошки. Предпочитают держаться в стороне, чтобы не мешать. Обладают несвойственным им умом.')" value="Белые"> 
+</form>
+<input type="button" onclick="myfunction('Хитрые от кончиков ушей до кончика хвоста. Часто бывают вспыльчивыми и недружелюбными к тем, с кем живут. Но очень воспитанные. ')" value="Рыжие"> 
+</form>
+<input type="button" onclick="myfunction('Отличаются особым характером, особенно кошки, будут отплачивать тем же, что «получают». Всегда понимают за что их ругают. По этой причине, сиамские кошки считаются злопамятными, вредными и злыми. Сами кошки – энергичные и нежные. ')" value="Сиамские"> 
+</form>
+<input type="button" onclick="myfunction('Одно из самых спокойных созданий. Характер тихий, а сами кошки ласковые и нежные по отношению к нам. ')" value="Голубые"> 
+</form>
+<input type="button" onclick="myfunction('Такой окрас бывает только у кошек. Они отличные мамы. Но характер вспыльчивый. Кошки черепахового окраса очень темпераментные и непослушные дамы. К тому же, знают себе цену, могут позволить пококетничать. ')" value="Черепаховые"> 
+</form>
+
+<p id="demo"></p>
+
+  
+    
+    <h2 class="blue">Таблица соотношения человеческих и кошачьих лет</h2>
+    <table>
+	<tr>
+		<th>Кошачий возраст</th>
+		<th>Возраст человека</th>
+	</tr>
+	<tr>
+		<td>1 год</td>
+		<td>15 лет</td>
+	</tr>
+	<tr>
+		<td>2 года</td>
+		<td>24 года</td>
+	</tr>
+	<tr>
+		<td>3 года</td>
+		<td>28 лет</td>
+	</tr>
+	<tr>
+		<td>4 года</td>
+		<td>32 года</td>
+	</tr>
+	<tr>
+		<td>5 лет</td>
+		<td>36 лет</td>
+	</tr>
+	<tr>
+		<td>7 лет</td>
+		<td>44 года</td>
+	</tr>
+	<tr>
+		<td>8 лет</td>
+		<td>48 лет</td>
+	</tr>
+	<tr>
+		<td>9 лет</td>
+		<td>52 года</td>
+	</tr>
+	<tr>
+		<td>10 лет</td>
+		<td>56 лет</td>
+	</tr>
+</table>
+	<h2 class=red> Особенности поведения кошек</h2>
+	<p class="under">Кошка выгибает спину</p>
+    <figure>
+      <img src="spina.jpg" alt="spina" class="radius">
+      <figcaption>Кошка выгибает спину при предчувствии опасности</figcaption>
+    </figure>
+    <p class="under">Кошка трётся о ногу или мебель</p>
+    <figure>
+      <img src="trenie.jpg" alt="trenie" class="radius">
+      <figcaption>Кошка трётся о ноги хозяина с целью показать свои чувства или пометить территорию</figcaption>
+    </figure>
+    <p class="under">Ползание по-пластунски</p>
+    <figure>
+      <img src="plastun.jpg" alt="plastun" class="radius" class="radius">
+      <figcaption>Ползать по-пластунски животное может потому что чувствует себя не в безопасности</figcaption>
+    </figure>
+    <p class="under">Подергивание и махание хвостом</p>
+    <figure>
+      <img src="hvost.jpg" alt="hvost" class="radius">
+      <figcaption>Если кот подёргивает или машет хвостом, то лучше на время оставить животное в покое</figcaption>
+    </figure>
+	<h2 class="red">Полезные ссылки</h2>
+    	<a href="https://www.murcat.ru/">Мурлыка</a> <br>
+  		<a href="https://mau.ru/">Cats-портал</a> <br>
+ 		<a href="https://kotclub.ru/">Котклуб.ру</a> <br>
+		<a href="https://koshkanasha.ru/">KOSHKAnasha</a> <br>
+	<h2 class="blue"> Кошачьи песни</h2>
+	<audio src="playful-cat-sounds_z1wz-rnd.mp3" controls>
+	</audio><br/>
+	<h2 class="blue">Видео про кошек</h2>
+	<video src="s-koshkami.mp4" controls>
+	</video>
+
+<h2 class="red"> Текущее время:</h2>
+<h2 id="txt"></h2>
+
+</main>
+    <footer>
+      <p>Автор сайта: Олег Ягодкин</p>
+      	<address>
+     		улица 2-я Чайковского, д. 12<br/>
+      		Иваново<br/>
+    	</address>
+      <p> <a href="mailto:yagodkinov@yandex.ru">Написать автору</a></p>
+
+
+
+    </footer>
+
+      <script>    
+	      $("#block").animate({width: "30%"}, 1500);     	
+      </script>    
+   
+     <script>
+         $( "ol" ).append( "<li>Абиссинская кошка</li>" );
+ 	</script>
+ 
+
+ </body>
+</html>
